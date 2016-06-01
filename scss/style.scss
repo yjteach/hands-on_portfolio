@@ -14,14 +14,48 @@ body {
     font-family: "メイリオ", Meiryo, "游ゴシック", YuGothic, 'ＭＳ Ｐゴシック', sans-serif;
     color: #4a3c2f;
     -webkit-text-size-adjust: 100%;
+    background-color: #fffeee;
 }
 #wrapper {
-  width: 960px;
-  margin: 0 auto;
+    width: 960px;
+    margin: 0 auto;
+    font-size: 88%;
+    color: #222;
+    line-height: 1.51;
 }
 
 /* header -------------------------- */
+#nav{
+    padding: 15px 0;
 
+    h1 {
+        font-size: 140%;
+        font-weight: bold;
+        img{
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+
+    ul {
+        float: right;
+        margin-top: -32px;
+        li{
+            float: left;
+            padding-left: 20px;
+            a{
+                display: block;
+                text-decoration: none;
+                color: #000000;
+                font-size: 140%;
+                &:hover{
+                    color:#cc0000;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
 
 
 /* contents -------------------------- */

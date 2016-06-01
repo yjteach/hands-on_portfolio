@@ -22,49 +22,100 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* common -------------------------- */
 .clearfix:after {
   content: "";
   display: block;
-  clear: both; }
+  clear: both;
+}
 
 .clearfix {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 body {
   font-family: "メイリオ", Meiryo, "游ゴシック", YuGothic, 'ＭＳ Ｐゴシック', sans-serif;
   color: #4a3c2f;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  background-color: #fffeee;
+}
 
 #wrapper {
   width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 88%;
+  color: #222;
+  line-height: 1.51;
+}
 
 /* header -------------------------- */
+#nav {
+  padding: 15px 0;
+}
+
+#nav h1 {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+#nav h1 img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#nav ul {
+  float: right;
+  margin-top: -32px;
+}
+
+#nav ul li {
+  float: left;
+  padding-left: 20px;
+}
+
+#nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 140%;
+}
+
+#nav ul li a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
 /* contents -------------------------- */
 /* footer -------------------------- */
