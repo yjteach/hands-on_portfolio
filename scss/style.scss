@@ -26,6 +26,9 @@ strong{
     color: #222;
     line-height: 1.51;
 }
+.shadow{
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.4);
+}
 
 /* header -------------------------- */
 #nav{
@@ -64,6 +67,7 @@ strong{
 #topImage {
     height: 400px;
     width: 960px;
+    margin-bottom: 20px;
     background-color: #fff;
     background-image: url("../images/topimage01.jpg");
 /*    display: table-cell;
@@ -75,6 +79,7 @@ strong{
         padding-top: 120px;
         strong{
             font-size: 120%;
+            color: #009999;
         }
     }
 }
