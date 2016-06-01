@@ -16,6 +16,9 @@ body {
     -webkit-text-size-adjust: 100%;
     background-color: #fffeee;
 }
+strong{
+    font-weight: bold;
+}
 #wrapper {
     width: 960px;
     margin: 0 auto;
@@ -47,7 +50,7 @@ body {
                 display: block;
                 text-decoration: none;
                 color: #000000;
-                font-size: 140%;
+                font-size: 130%;
                 &:hover{
                     color:#cc0000;
                     text-decoration: underline;
@@ -57,9 +60,36 @@ body {
     }
 }
 
+/* topImage -------------------------- */
+#topImage {
+    height: 400px;
+    width: 960px;
+    background-color: #fff;
+    background-image: url("../images/topimage01.jpg");
+/*    display: table-cell;
+    vertical-align: middle;*/
+
+    h2{
+        font-size: 200%;
+        padding-left: 400px;
+        padding-top: 120px;
+        strong{
+            font-size: 120%;
+        }
+    }
+}
+
+
+
 
 /* contents -------------------------- */
 
 
 
 /* footer -------------------------- */
+
+
+
+
+
+

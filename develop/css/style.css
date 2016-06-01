@@ -72,6 +72,10 @@ body {
   background-color: #fffeee;
 }
 
+strong {
+  font-weight: bold;
+}
+
 #wrapper {
   width: 960px;
   margin: 0 auto;
@@ -109,12 +113,32 @@ body {
   display: block;
   text-decoration: none;
   color: #000000;
-  font-size: 140%;
+  font-size: 130%;
 }
 
 #nav ul li a:hover {
   color: #cc0000;
   text-decoration: underline;
+}
+
+/* topImage -------------------------- */
+#topImage {
+  height: 400px;
+  width: 960px;
+  background-color: #fff;
+  background-image: url("../images/topimage01.jpg");
+  /*    display: table-cell;
+    vertical-align: middle;*/
+}
+
+#topImage h2 {
+  font-size: 200%;
+  padding-left: 400px;
+  padding-top: 120px;
+}
+
+#topImage h2 strong {
+  font-size: 120%;
 }
 
 /* contents -------------------------- */
