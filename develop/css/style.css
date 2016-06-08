@@ -129,7 +129,6 @@ strong {
 #topImage {
   height: 400px;
   width: 960px;
-  margin-bottom: 20px;
   background-color: #fff;
   background-image: url("../images/topimage01.jpg");
   /*    display: table-cell;
@@ -148,4 +147,50 @@ strong {
 }
 
 /* contents -------------------------- */
+/* profile -------------------------- */
+#profile {
+  width: 930px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+#profile h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#profile dt {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+  width: 120px;
+  color: #888;
+}
+
+#profile dd {
+  float: left;
+  width: 470px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+#profile .leftArea {
+  float: left;
+  width: 600px;
+}
+
+#profile .rightArea {
+  float: right;
+  width: 299px;
+  border-left: 1px dotted #666;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+#profile .rightArea dd {
+  width: auto;
+}
+
 /* footer -------------------------- */
