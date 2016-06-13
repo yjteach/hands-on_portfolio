@@ -95,6 +95,7 @@
 ヒント
 * 横並びにする部分：float: left; と clear: left;を使う。
 * 罫線：border
+* 影：box-shadow
 
 #### プロフィール部分CSS答え合わせ（5分）
 講師が前で書く
