@@ -805,6 +805,216 @@ p{		padding: 15px;	}
 
 
 
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習6（HTML+CSS）</h1>
+					</section>
+
+					<section>
+						<h2>作品一覧部分HTML＋CSS(15分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head04.jpg" width="350"></p>
+							<p style="font-size:20px;">index.html</p>
+							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
+<!-- 作品 -->
+&lt;section id="works">
+     この中に書く
+&lt;/section>
+<!-- /作品 -->
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>見本と同じになるように作る</li>
+								<li>PC内に自分の作品がある場合は、<br>内容を本物に差し替える。</li>
+								<li>リンク先はダミーの「#」で設定</li>
+								<li>影はプロフィール部分で作った物<br>を流用して設定する</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>横並びの左右をぴっちり揃えたい</td>
+									<td>外枠のmarginをマイナス値</td>
+								</tr>
+								<tr>
+									<td>箱の高さをれ揃えたい</td>
+									<td>display: flex; と flex-wrap: wrap;</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable style="height:250px;">
+<!-- 作品 -->
+&lt;section id="works" class="clearfix">
+    &lt;h2>作品一覧&lt;/h2>
+
+    &lt;div class="flexList">
+        <!-- 作品 -->
+        &lt;div class="item shadow">
+            &lt;a href="work01.html">
+                &lt;p>&lt;img src="images/work01_min.jpg" width="300">&lt;/p>
+                &lt;div class="text">
+                    &lt;p>ヤフオク！いい買い物の日特集LPサイト</p>
+                    &lt;p class="spec">詳細&gt;&gt;</p>
+                &lt;/div>
+            &lt;/a>
+        &lt;/div>
+        <!-- /作品 -->
+
+        <!-- 作品 -->
+        &lt;div class="item shadow">
+            &lt;a href="#">
+                &lt;p>&lt;img src="images/work02_min.jpg" width="300">&lt;/p>
+                &lt;div class="text">
+                    &lt;p>電力自由化特集サイト&lt;/p>
+                    &lt;p class="spec">詳細&gt;&gt;&lt;/p>
+                &lt;/div>
+            &lt;/a>
+        &lt;/div>
+        <!-- /作品 -->
+
+        <!-- 作品 -->
+        &lt;div class="item shadow">
+            &lt;a href="#">
+                &lt;p>&lt;img src="images/work03_min.jpg" width="300">&lt;/p>
+                &lt;div class="text">
+                    &lt;p>ヤフオク！リニューアルLPサイト&lt;/p>
+                    &lt;p class="spec">詳細&gt;&gt;&lt;/p>
+                &lt;/div>
+            &lt;/a>
+        &lt;/div>
+        <!-- /作品 -->
+    &lt;/div>
+
+&lt;/section>
+<!-- /作品 -->
+						</code></pre>
+						<pre><code class="css" data-trim contenteditable style="height:250px;">
+/* works -------------------------- */
+#works {
+  overflow: hidden;
+  margin-right: -30px;
+}
+
+#works h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#works .flexList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#works .item {
+  background-color: #fff;
+  width: 300px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+#works .item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#works .item a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+#works .item .text {
+  padding: 5px 15px;
+}
+
+#works .item .spec {
+  text-align: right;
+}
+						</code></pre>
+					</section>
+				</section>
+
+
+
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習7（HTML+CSS）</h1>
+					</section>
+
+					<section>
+						<h2>フッター部分HTML＋CSS(5分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head05.jpg" width="350"></p>
+							<p style="font-size:20px;">index.html</p>
+							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
+<!-- フッター -->
+&lt;section id="footer">
+     この中に書く
+&lt;/section>
+<!-- /フッター -->
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>見本と同じになるように作る</li>
+								<li>名前部分は自分の名前</li>
+								<li>余裕があれば、メールや<br>Twitter,Facebookへのリンクを追加。</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>文字の真ん中よせ</td>
+									<td>text-align</td>
+								</tr>
+								<tr>
+									<td>機種依存文字</td>
+									<td>実体参照を使う（例:&copy;）</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable style="height:250px;">
+<!-- フッター -->
+&lt;footer id="footer">
+    &lt;p>&copy; &lt;strong>Masatoshi Wakizaki&lt;/strong>, All Rights Reserved&lt;/p>
+&lt;/footer>
+<!-- /フッター -->
+						</code></pre>
+						<pre><code class="css" data-trim contenteditable style="height:250px;">
+/* footer -------------------------- */
+#footer {
+  background-color: #555;
+  margin-top: 15px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ddd;
+}
+						</code></pre>
+					</section>
+				</section>
+
+
+
+
 			</div>
 		</div>
 
