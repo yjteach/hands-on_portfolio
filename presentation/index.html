@@ -349,9 +349,9 @@ p{		padding: 15px;	}
 							<p>index.html</p>
 							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
 <!-- ヘッダー -->
-<header id="top">
+&lt;header id="top">
     この中に書く
-</header>
+&lt;/header>
 <!-- /ヘッダー -->
 							</code></pre>
 
@@ -390,17 +390,17 @@ p{		padding: 15px;	}
 						<h2>解答例</h2>
 						<pre><code class="html" data-trim contenteditable>
 <!-- ヘッダー -->
-<header id="top">
-	<h1>
-		<img src="images/logo01.png" width="32" height="32">
+&lt;header id="top">
+	&lt;h1>
+		&lt;img src="images/logo01.png" width="32" height="32">
 		御茶ノ水 太郎's Portfolio
-	</h1>
-	<ul>
-		<li><a href="#top">ホーム</a></li>
-		<li><a href="#profile">プロフィール</a></li>
-		<li><a href="#works">作品一覧</a></li>
-	</ul>
-</header>
+	&lt;/h1>
+	&lt;ul>
+		&lt;li>&lt;a href="#top">ホーム&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#profile">プロフィール&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#works">作品一覧&lt;/a>&lt;/li>
+	&lt;/ul>
+&lt;/header>
 <!-- /ヘッダー -->
 						</code></pre>
 					</section>
@@ -514,6 +514,503 @@ p{		padding: 15px;	}
 
 
 
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習3（HTML+CSS）</h1>
+					</section>
+
+					<section>
+						<h2>メインイメージHTML＋CSS(20分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head02.jpg" width="350"></p>
+							<p style="font-size:20px;">index.html</p>
+							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
+<!-- トップイメージ -->
+&lt;section id="topImage">
+     この中に書く
+&lt;/section>
+<!-- /トップイメージ -->
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>自分のキャッチコピーを入れる（h2タグ）</li>
+								<li>自分の写真を撮影して取り込み、<br>CSSの背景として入れる（横960px、縦400px）</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>背景に画像</td>
+									<td>background-image</td>
+								</tr>
+								<tr>
+									<td>余白調整</td>
+									<td>padding、margin</td>
+								</tr>
+								<tr>
+									<td>文字サイズ</td>
+									<td>font-size</td>
+								</tr>
+								<tr>
+									<td>文字色</td>
+									<td>color</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable>
+<!-- トップイメージ -->
+&lt;section id="topImage">
+        &lt;h2>
+        	採用担当者さまに朗報です！&lt;br>
+        	世界一のデザイナーを目指す&lt;br>
+        	&lt;strong>御茶ノ水 太郎&lt;/strong>
+        	が就活始めました！
+        &lt;/h2>
+&lt;/section>
+<!-- /トップイメージ -->
+						</code></pre>
+						<pre><code class="css" data-trim contenteditable style="height:250px;">
+/* topImage -------------------------- */
+#topImage {
+  height: 400px;
+  width: 960px;
+  background-color: #fff;
+  background-image: url("../images/topimage01.jpg");
+  /*    display: table-cell;
+    vertical-align: middle;*/
+}
+
+#topImage h2 {
+  font-size: 200%;
+  padding-left: 400px;
+  padding-top: 120px;
+}
+
+#topImage h2 strong {
+  font-size: 120%;
+  color: #009999;
+}
+						</code></pre>
+					</section>
+				</section>
+
+
+
+
+
+
+
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習4（HTML）</h1>
+					</section>
+
+					<section>
+						<h2>プロフィール部分HTML(10分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head03.jpg" width="350"></p>
+							<p style="font-size:20px;">index.html</p>
+							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
+<!-- プロフィール -->
+&lt;section id="profile">
+     この中に書く
+&lt;/section>
+<!-- /プロフィール -->
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>自分の実際のプロフィールを考えて入れる</li>
+								<li>入れる項目は好きに変更OK</li>
+								<li>定義リストを使う</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>左右に振り分け</td>
+									<td>divで囲い後でCSS設定</td>
+								</tr>
+								<tr>
+									<td>定義リスト</td>
+									<td>dl, dt, dd</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable>
+<!-- プロフィール -->
+&lt;section id="profile" class="shadow clearfix">
+    &lt;div class="leftArea">
+        &lt;h2>プロフィール&lt;/h2>
+        &lt;dl>
+            &lt;dt>名前&lt;/dt>
+            &lt;dd>御茶ノ水　太郎&lt;/dd>
+
+            &lt;dt>得意なこと&lt;/dt>
+            &lt;dd>デッサン、CAD、タイポグラフィ、WEBデザイン&lt;/dd>
+
+            &lt;dt>これからチャレンジしたいこと&lt;/dt>
+            &lt;dd>アプリ開発、WEBサイトリリース、名刺デザイン、ハッカソンに出る&lt;/dd>
+
+            &lt;dt>将来の夢&lt;/dt>
+            &lt;dd>世界一のデザイナーになって、デザインの力で世の中を良くする！&lt;/dd>
+        &lt;/dl>
+    &lt;/div>
+    &lt;div class="rightArea">
+        &lt;h2>スキル&lt;/h2>
+        &lt;dl>
+            &lt;dt>Photoshop&lt;/dt>
+            &lt;dd>★★★★★&lt;/dd>
+            &lt;dt>Illustrator&lt;/dt>
+            &lt;dd>★★★★☆&lt;/dd>
+            &lt;dt>HTML5&lt;/dt>
+            &lt;dd>★★★☆☆&lt;/dd>
+            &lt;dt>CSS3&lt;/dt>
+            &lt;dd>★★☆☆☆&lt;/dd>
+            &lt;dt>Javascript&lt;/dt>
+            &lt;dd>★☆☆☆☆&lt;/dd>
+        &lt;/dl>
+    &lt;/div>
+&lt;/section>
+<!-- /プロフィール -->
+						</code></pre>
+
+					</section>
+				</section>
+
+
+
+
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習5（CSS）</h1>
+					</section>
+
+					<section>
+						<h2>プロフィール部分CSS(10分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head03.jpg" width="350"></p>
+							<p>css/style.css</p>
+							<pre><code class="CSS" data-trim contenteditable style="font-size: 24px;">
+/* profile -------------------------- */
+ここに書く
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>見本と同じレイアウトになるようにCSSを書く</li>
+								<li>余裕のある人は、色を変えてみたり<br>罫線を画像とか好きなものに変えて。</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>横並びにする部分</td>
+									<td>float: left; と clear: left;を使う</td>
+								</tr>
+								<tr>
+									<td>罫線</td>
+									<td>border</td>
+								</tr>
+								<tr>
+									<td>背景色</td>
+									<td>background-color</td>
+								</tr>
+								<tr>
+									<td>影</td>
+									<td>box-shadow</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="css" data-trim contenteditable>
+//* profile -------------------------- */
+#profile {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+#profile h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#profile dt {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+  width: 120px;
+  color: #888;
+}
+
+#profile dd {
+  float: left;
+  width: 470px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+#profile .leftArea {
+  float: left;
+  width: 600px;
+}
+
+#profile .rightArea {
+  float: right;
+  width: 299px;
+  border-left: 1px dotted #666;
+  padding-left: 15px;
+  margin-left: 15px;
+}
+
+#profile .rightArea dd {
+  width: auto;
+}
+						</code></pre>
+					</section>
+				</section>
+
+
+
+
+
+
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習6（HTML+CSS）</h1>
+					</section>
+
+					<section>
+						<h2>作品一覧部分HTML＋CSS(15分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head04.jpg" width="350"></p>
+							<p style="font-size:20px;">index.html</p>
+							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
+<!-- 作品 -->
+&lt;section id="works">
+     この中に書く
+&lt;/section>
+<!-- /作品 -->
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>見本と同じになるように作る</li>
+								<li>PC内に自分の作品がある場合は、<br>内容を本物に差し替える。</li>
+								<li>リンク先はダミーの「#」で設定</li>
+								<li>影はプロフィール部分で作った物<br>を流用して設定する</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>横並びの左右をぴっちり揃えたい</td>
+									<td>外枠のmarginをマイナス値</td>
+								</tr>
+								<tr>
+									<td>箱の高さをれ揃えたい</td>
+									<td>display: flex; と flex-wrap: wrap;</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable style="height:250px;">
+<!-- 作品 -->
+&lt;section id="works" class="clearfix">
+    &lt;h2>作品一覧&lt;/h2>
+
+    &lt;div class="flexList">
+        <!-- 作品 -->
+        &lt;div class="item shadow">
+            &lt;a href="work01.html">
+                &lt;p>&lt;img src="images/work01_min.jpg" width="300">&lt;/p>
+                &lt;div class="text">
+                    &lt;p>ヤフオク！いい買い物の日特集LPサイト</p>
+                    &lt;p class="spec">詳細&gt;&gt;</p>
+                &lt;/div>
+            &lt;/a>
+        &lt;/div>
+        <!-- /作品 -->
+
+        <!-- 作品 -->
+        &lt;div class="item shadow">
+            &lt;a href="#">
+                &lt;p>&lt;img src="images/work02_min.jpg" width="300">&lt;/p>
+                &lt;div class="text">
+                    &lt;p>電力自由化特集サイト&lt;/p>
+                    &lt;p class="spec">詳細&gt;&gt;&lt;/p>
+                &lt;/div>
+            &lt;/a>
+        &lt;/div>
+        <!-- /作品 -->
+
+        <!-- 作品 -->
+        &lt;div class="item shadow">
+            &lt;a href="#">
+                &lt;p>&lt;img src="images/work03_min.jpg" width="300">&lt;/p>
+                &lt;div class="text">
+                    &lt;p>ヤフオク！リニューアルLPサイト&lt;/p>
+                    &lt;p class="spec">詳細&gt;&gt;&lt;/p>
+                &lt;/div>
+            &lt;/a>
+        &lt;/div>
+        <!-- /作品 -->
+    &lt;/div>
+
+&lt;/section>
+<!-- /作品 -->
+						</code></pre>
+						<pre><code class="css" data-trim contenteditable style="height:250px;">
+/* works -------------------------- */
+#works {
+  overflow: hidden;
+  margin-right: -30px;
+}
+
+#works h2 {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#works .flexList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#works .item {
+  background-color: #fff;
+  width: 300px;
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+#works .item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#works .item a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+#works .item .text {
+  padding: 5px 15px;
+}
+
+#works .item .spec {
+  text-align: right;
+}
+						</code></pre>
+					</section>
+				</section>
+
+
+
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習7（HTML+CSS）</h1>
+					</section>
+
+					<section>
+						<h2>フッター部分HTML＋CSS(5分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head05.jpg" width="350"></p>
+							<p style="font-size:20px;">index.html</p>
+							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
+<!-- フッター -->
+&lt;section id="footer">
+     この中に書く
+&lt;/section>
+<!-- /フッター -->
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>見本と同じになるように作る</li>
+								<li>名前部分は自分の名前</li>
+								<li>余裕があれば、メールや<br>Twitter,Facebookへのリンクを追加。</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>文字の真ん中よせ</td>
+									<td>text-align</td>
+								</tr>
+								<tr>
+									<td>機種依存文字</td>
+									<td>実体参照を使う（例:&copy;）</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable style="height:250px;">
+<!-- フッター -->
+&lt;footer id="footer">
+    &lt;p>&copy; &lt;strong>Masatoshi Wakizaki&lt;/strong>, All Rights Reserved&lt;/p>
+&lt;/footer>
+<!-- /フッター -->
+						</code></pre>
+						<pre><code class="css" data-trim contenteditable style="height:250px;">
+/* footer -------------------------- */
+#footer {
+  background-color: #555;
+  margin-top: 15px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #ddd;
+}
+						</code></pre>
+					</section>
+				</section>
 
 
 
