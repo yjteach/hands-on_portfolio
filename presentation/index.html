@@ -346,6 +346,7 @@ p{		padding: 15px;	}
 						<h2>ヘッダー部分のHTML作成(10分)</h2>
 						<div style="float:left;width:350px;">
 							<p><img src="img/cap_head01.jpg" width="350"></p>
+							<p>index.html</p>
 							<pre><code class="html" data-trim contenteditable style="font-size: 24px;">
 <!-- ヘッダー -->
 <header id="top">
@@ -387,8 +388,131 @@ p{		padding: 15px;	}
 
 					<section>
 						<h2>解答例</h2>
+						<pre><code class="html" data-trim contenteditable>
+<!-- ヘッダー -->
+<header id="top">
+	<h1>
+		<img src="images/logo01.png" width="32" height="32">
+		御茶ノ水 太郎's Portfolio
+	</h1>
+	<ul>
+		<li><a href="#top">ホーム</a></li>
+		<li><a href="#profile">プロフィール</a></li>
+		<li><a href="#works">作品一覧</a></li>
+	</ul>
+</header>
+<!-- /ヘッダー -->
+						</code></pre>
 					</section>
 				</section>
+
+
+
+
+
+
+
+
+
+
+				<!--  -->
+				<section>
+					<section>
+						<h1>演習2（CSS）</h1>
+					</section>
+
+					<section>
+						<h2>ヘッダー部分のCSS作成(10分)</h2>
+						<div style="float:left;width:350px;">
+							<p><img src="img/cap_head01.jpg" width="350"></p>
+							<p>css/style.css</p>
+							<pre><code class="CSS" data-trim contenteditable style="font-size: 24px;">
+/* header -------------------------- */
+ここに書く
+							</code></pre>
+
+						</div>
+						<div style="float:right;width:600px;">
+							<h6>要件</h6>
+							<ul style="font-size:24px;">
+								<li>見本と同じレイアウトになるようにCSSを書く</li>
+								<li>余裕のある人は、色を変えてみたりアイコンを<br>好きなものに変えてみる。</li>
+							</ul>
+							<br>
+							<h6>ヒント</h6>
+							<table style="font-size:24px;">
+								<tr>
+									<td>左右の振り分け</td>
+									<td>float</td>
+								</tr>
+								<tr>
+									<td>文字サイズ</td>
+									<td>font-size</td>
+								</tr>
+								<tr>
+									<td>画像と文字の高さ調整</td>
+									<td>vertical-align</td>
+								</tr>
+								<tr>
+									<td>余白調整</td>
+									<td>padding、margin</td>
+								</tr>
+								<tr>
+									<td>マウスオン時のリンク色変更</td>
+									<td>a:hover</td>
+								</tr>
+								<tr>
+									<td>リンクの下線</td>
+									<td>text-decoration</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h2>解答例</h2>
+						<pre><code class="css" data-trim contenteditable>
+/* header -------------------------- */
+#top {
+  padding: 15px 0;
+}
+
+#top h1 {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+#top h1 img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#top ul {
+  float: right;
+  margin-top: -32px;
+}
+
+#top ul li {
+  float: left;
+  padding-left: 20px;
+}
+
+#top ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 130%;
+}
+
+#top ul li a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+						</code></pre>
+					</section>
+				</section>
+
+
 
 
 

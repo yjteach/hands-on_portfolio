@@ -89,38 +89,38 @@ strong {
 }
 
 /* header -------------------------- */
-#nav {
+#top {
   padding: 15px 0;
 }
 
-#nav h1 {
+#top h1 {
   font-size: 140%;
   font-weight: bold;
 }
 
-#nav h1 img {
+#top h1 img {
   vertical-align: middle;
   margin-right: 10px;
 }
 
-#nav ul {
+#top ul {
   float: right;
   margin-top: -32px;
 }
 
-#nav ul li {
+#top ul li {
   float: left;
   padding-left: 20px;
 }
 
-#nav ul li a {
+#top ul li a {
   display: block;
   text-decoration: none;
   color: #000000;
   font-size: 130%;
 }
 
-#nav ul li a:hover {
+#top ul li a:hover {
   color: #cc0000;
   text-decoration: underline;
 }
